@@ -5,7 +5,9 @@
     <title>Materialize Template</title>
     <!-- <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.css"> -->
     <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
     <script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.js"></script>
     <script type="text/javascript">
@@ -13,7 +15,11 @@
     </script>
     <style media="screen">
       html{
-        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Source Code Pro', monospace;
+        /*font-family: 'Nova Mono', monospace;*/
+      }
+      h1, h2, h3, h4, h5  {
+        font-family: 'Nova Mono', monospace;
       }
       .col {
 
@@ -31,6 +37,9 @@
         /*height: 100px;*/
         /*width: 100px;*/
       }
+      .card-panel{
+        padding-top: 0px;
+      }
 
     </style>
   </head>
@@ -38,9 +47,9 @@
 
     <nav>
       <div class="nav-wrapper" style="margin-bottom:50px;">
-        <a href="#!" class="brand-logo">mononoke.io</a>
+        <a href="#!" class="brand-logo" style="margin-left:80px;">mononoke.io</a>
         <ul class="right hide-on-med-and-down">
-          <!-- <li><a href="#">A link</a></li> -->
+
           <li><a class="waves-effect waves-light btn-large">code</a></li>
           <li><a class="waves-effect waves-light btn-large">about</a></li>
           <li><a class="waves-effect waves-light btn-large">contact</a></li>
@@ -51,6 +60,20 @@
     <br>
     <br>
     <div class="container">
+
+
+
+        <div class="divider"></div>
+
+        <!-- floating panel and text -->
+        <div class="section">
+          <div class="card-panel hoverable">
+            <h1 class="center-align">mononoke.io</h1>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <!-- 1234  -->
         <div class="row">
           <div class="col s3 z-depth-5">
             1
@@ -66,6 +89,7 @@
           </div>
         </div>
 
+        <!-- shadow divs, two natures -->
         <div class="row" >
           <div class="col s6 z-depth-5">
             <h3>my two natures had memory in common</h3>
@@ -83,17 +107,6 @@
           </div>
         </div>
 
-
-        <div class="divider"></div>
-
-        <!-- floating panel and text -->
-        <div class="section">
-          <div class="card-panel hoverable">
-            <h1 class="center-align">mononoke.io</h1>
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-
         <div class="divider"></div>
 
         <!-- floating panel and text -->
@@ -105,7 +118,7 @@
         </div>
 
         <div class="divider"></div>
-        
+
         <!-- floating panel and text -->
         <div class="section">
           <div class="card-panel hoverable"style="background: url(http://pngimg.com/upload/cat_PNG92.png)">
@@ -145,14 +158,14 @@
        </div>
 
        <!-- kodama floating elements -->
-       <div class="fixed-action-btn "style=" right: auto; left:50px;top:100px;margin-top:10px;">
+       <div class="fixed-action-btn "style=" right: auto; left:50px;top:60px;margin-top:10px;">
          <img src="images/kodama.png" style="width:250px;"alt="">
          <!-- <a href="#" style="background: url(http://pngimg.com/upload/cat_PNG92.png)">asdasd</a> -->
           <!-- <a class="btn-floating btn-large red" style="background: url(http://pngimg.com/upload/cat_PNG92.png)"> -->
             <!-- <i class="large material-icons"><h5>∴</h5></i> -->
           </a>
 
-          <ul style="bottom:auto;margin:10px;z-depth-5;margin-left:35px;">
+          <ul style="bottom:auto;margin-top:10px;margin-right:10px;z-depth-5;">
             <li><a class="btn-floating "><i class="material-icons"></i></a></li>
             <li><a class="btn-floating blue"><i class="material-icons"></i></a></li>
             <li><a class="btn-floating green"><i class="material-icons"></i></a></li>
@@ -173,7 +186,7 @@
                 I am convenient because I require little markup to use effectively.</p>
               </div>
               <div class="card-action">
-                <a href="mononoke.io">~link~</a>
+                <a href="mononoke.io">∴</a>
               </div>
             </div>
           </div>
@@ -181,14 +194,14 @@
             <div class="card">
               <div class="card-image">
                 <img src="images/kodama.png">
-                <span class="card-title">Card Title</span>
+                <span class="card-title">JS Callbacks</span>
               </div>
               <div class="card-content truncate">
                 <p style="color:black;">I am a very simple card. I am good at containing small bits of information.
                 I am convenient because I require little markup to use effectively.</p>
               </div>
               <div class="card-action">
-                <a href="mononoke.io">~link~</a>
+                <a href="mononoke.io">∴</a>
               </div>
             </div>
           </div>
@@ -196,14 +209,14 @@
             <div class="card">
               <div class="card-image">
                 <img src="images/kodama.png">
-                <span class="card-title">Card Title</span>
+                <span class="card-title">JS Promises</span>
               </div>
               <div class="card-content truncate">
                 <p style="color:black;">I am a very simple card. I am good at containing small bits of information.
                 I am convenient because I require little markup to use effectively.</p>
               </div>
               <div class="card-action">
-                <a href="mononoke.io">~link~</a>
+                <a href="mononoke.io">∴</a>
               </div>
             </div>
           </div>
@@ -211,14 +224,14 @@
             <div class="card">
               <div class="card-image">
                 <img src="images/kodama.png">
-                <span class="card-title">Card Title</span>
+                <span class="card-title">JS Async</span>
               </div>
               <div class="card-content truncate">
                 <p style="color:black;">I am a very simple card. I am good at containing small bits of information.
                 I am convenient because I require little markup to use effectively.</p>
               </div>
               <div class="card-action">
-                <a href="mononoke.io">~link~</a>
+                <a href="mononoke.io">∴</a>
               </div>
             </div>
           </div>
@@ -236,15 +249,15 @@
          <div class="row">
            <div class="col l6 s12">
              <h5 class="white-text">Footer Content</h5>
-             <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+             <p class="grey-text text-lighten-4">My two natures had memory in common.</p>
            </div>
            <div class="col l4 offset-l2 s12">
              <h5 class="white-text">Links</h5>
              <ul>
                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-               <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-               <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+
+               <!-- <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li> -->
              </ul>
            </div>
          </div>
