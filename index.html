@@ -50,8 +50,16 @@
       #footer-content{
         background-color: #ffab00;
       }
+      .parallax-container{
+        height: 200px;
+      }
 
     </style>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.parallax').parallax();
+      });
+    </script>
   </head>
   <body>
 
@@ -143,6 +151,8 @@
          <div class="col s12 m6 l6"><p>Responsive to small screens</p></div>
         </div>
 
+
+
        <!-- collapsiable drop down -->
        <div class="row">
          <ul class="collapsible" data-collapsible="accordion">
@@ -182,6 +192,16 @@
             <li><a class="btn-floating z-depth-3" style="background-color:#FFE57F;"><i class="material-icons"></i></a></li>
           </ul>
         </div>
+      </div>
+
+      <!-- parallax -->
+      <div class="row">
+        <div class="parallax-container">
+          <div class="parallax"><img src="images/kodama_plax.jpg"></div>
+        </div>
+      </div>
+      <div class="container">
+
 
         <!-- image card -->
         <div class="row"style="font-size:25%;">
