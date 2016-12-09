@@ -42,10 +42,13 @@
         padding-top: 5px;
       }
       .nav-wrapper{
-        background-color: #00E676;
+        background-color: #90A4AE;
       }
       footer.page-footer{
-        background-color: #00E676;
+        background-color: #90A4AE;
+      }
+      #footer-content{
+        background-color: #ffab00;
       }
 
     </style>
@@ -53,13 +56,13 @@
   <body>
 
     <nav>
-      <div class="nav-wrapper" style="margin-bottom:50px;">
+      <div class="nav-wrapper z-depth-2" style="margin-bottom:50px;">
         <a href="#!" class="brand-logo" style="margin-left:80px;">mononoke.io</a>
         <ul class="right hide-on-med-and-down">
-
-          <li><a class="waves-effect waves-light btn-large">code</a></li>
-          <li><a class="waves-effect waves-light btn-large">about</a></li>
-          <li><a class="waves-effect waves-light btn-large">contact</a></li>
+          <li><a class="waves-effect waves-light btn-large z-depth-3" style="background-color: #FFE57F; color:#757575;">gitHub</a></li>
+          <li><a class="waves-effect waves-light btn-large z-depth-3"style="background-color: #FFD740; color:#9E9E9E;">code</a></li>
+          <li><a class="waves-effect waves-light btn-large z-depth-3"style="background-color: #FFC400; color:#BDBDBD;">about</a></li>
+          <li><a class="waves-effect waves-light btn-large z-depth-3"style="background-color: #FFAB00;">contact</a></li>
         </ul>
       </div>
     </nav>
@@ -79,7 +82,7 @@
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-
+        <br>
         <!-- 1234  -->
         <div class="row">
           <div class="col s3 z-depth-5">
@@ -128,7 +131,7 @@
 
         <!-- floating panel and text -->
         <div class="section">
-          <div class="card-panel hoverable"style="background: url(http://pngimg.com/upload/cat_PNG92.png)">
+          <div class="card-panel hoverable"style="background: url(images/kit.png)">
             <h1 class="center-align">women in economics</h1>
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -173,23 +176,23 @@
           </a>
 
           <ul style="bottom:auto;margin-top:10px;margin-right:10px;z-depth-5;">
-            <li><a class="btn-floating "><i class="material-icons"></i></a></li>
-            <li><a class="btn-floating blue"><i class="material-icons"></i></a></li>
-            <li><a class="btn-floating green"><i class="material-icons"></i></a></li>
-            <li><a class="btn-floating blue"><i class="material-icons"></i></a></li>
+            <li><a class="btn-floating z-depth-3"style="background-color:#ffab00;"><i class="material-icons"></i></a></li>
+            <li><a class="btn-floating z-depth-3" style="background-color:#FFC400;"><i class="material-icons"></i></a></li>
+            <li><a class="btn-floating z-depth-3" style="background-color:#FFD740;"><i class="material-icons"></i></a></li>
+            <li><a class="btn-floating z-depth-3" style="background-color:#FFE57F;"><i class="material-icons"></i></a></li>
           </ul>
         </div>
 
         <!-- image card -->
-        <div class="row">
+        <div class="row"style="font-size:25%;">
           <div class="col s12 m7 l3">
             <div class="card">
               <div class="card-image">
                 <img src="images/kodama.png">
                 <span class="card-title">Card Title</span>
               </div>
-              <div class="card-content truncate">
-                <p style="color:black;">I am a very simple card. I am good at containing small bits of information.
+              <div class="card-content ">
+                <p style="color:black; ">I am a very simple card. I am good at containing small bits of information.
                 I am convenient because I require little markup to use effectively.</p>
               </div>
               <div class="card-action">
@@ -203,7 +206,7 @@
                 <img src="images/kodama.png">
                 <span class="card-title">JS Callbacks</span>
               </div>
-              <div class="card-content truncate">
+              <div class="card-content ">
                 <p style="color:black;">I am a very simple card. I am good at containing small bits of information.
                 I am convenient because I require little markup to use effectively.</p>
               </div>
@@ -218,7 +221,7 @@
                 <img src="images/kodama.png">
                 <span class="card-title">JS Promises</span>
               </div>
-              <div class="card-content truncate">
+              <div class="card-content ">
                 <p style="color:black;">I am a very simple card. I am good at containing small bits of information.
                 I am convenient because I require little markup to use effectively.</p>
               </div>
@@ -233,7 +236,7 @@
                 <img src="images/kodama.png">
                 <span class="card-title">JS Async</span>
               </div>
-              <div class="card-content truncate">
+              <div class="card-content ">
                 <p style="color:black;">I am a very simple card. I am good at containing small bits of information.
                 I am convenient because I require little markup to use effectively.</p>
               </div>
@@ -254,11 +257,11 @@
       <footer class="page-footer">
        <div class="container">
          <div class="row">
-           <div class="col l6 s12">
+           <div class="col l6 s12 z-depth-5"id="footer-content">
              <h5 class="white-text">Footer Content</h5>
              <p class="grey-text text-lighten-4">My two natures had memory in common.</p>
            </div>
-           <div class="col l4 offset-l2 s12">
+           <div class="col l4 offset-l2 s12 z-depth-5"id="footer-content">
              <h5 class="white-text">Links</h5>
              <ul>
                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
