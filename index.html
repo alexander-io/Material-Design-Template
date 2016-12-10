@@ -53,7 +53,8 @@
         padding-top: 5px;
       }
       .nav-wrapper{
-        background-color: #90A4AE;
+        /*background-color: #90A4AE;*/
+        background-color: #263238;
       }
       footer.page-footer{
         background-color: #90A4AE;
@@ -77,16 +78,19 @@
     <canvas style="z-index:-1;position: fixed; width: 100%; height: 100%;"id="mycanvas" resize></canvas>
     <nav>
       <div class="nav-wrapper z-depth-2" style="">
-        <a href="#!" class="brand-logo" style="margin-left:80px;">mononoke.io</a>
+        <a href="#!" class="brand-logo" style="margin-left:80px;font-family: 'Nova Mono', monospace;">mononoke.io</a>
         <ul class="right hide-on-med-and-down">
-          <li><a class="waves-effect waves-light btn-large z-depth-3" style="background-color: #FFE57F; color:#757575;">gitHub</a></li>
-          <li><a class="waves-effect waves-light btn-large z-depth-3"style="background-color: #FFD740; color:#9E9E9E;">code</a></li>
-          <li><a class="waves-effect waves-light btn-large z-depth-3"style="background-color: #FFC400; color:#BDBDBD;">about</a></li>
+          <!-- <li><a class="waves-effect waves-light btn-large z-depth-3" style="background-color: #FFE57F; color:#757575;">gitHub</a></li> -->
+          <li><a class="waves-effect waves-light btn-large z-depth-3" style="background-color: #FFE57F; color:#263238;">gitHub</a></li>
+
+          <!-- <li><a class="waves-effect waves-light btn-large z-depth-3"style="background-color: #FFD740; color:#9E9E9E;">code</a></li> -->
+          <li><a class="waves-effect waves-light btn-large z-depth-3"style="background-color: #FFD740; color:#263238;">code</a></li>
+          <li><a class="waves-effect waves-light btn-large z-depth-3"style="background-color: #FFC400; color:white">about</a></li>
           <li><a class="waves-effect waves-light btn-large z-depth-3"style="background-color: #FFAB00;">contact</a></li>
         </ul>
       </div>
     </nav>
-    <img src="images/pillar.png" style="width:500px;position:absolute;right:0px;top:120px;"alt="">
+    <img class="hide-on-med-and-down"src="images/pillar.png" style="width:500px;position:absolute;right:0px;top:180px;"alt="">
     <br>
     <br>
     <br>
@@ -103,7 +107,7 @@
 
     <!-- parallax -->
     <div class="row">
-      <div class="parallax-container">
+      <div class="parallax-container" style="height:570px;">
         <div class="parallax"><img src="images/kodama_plax.jpg"></div>
       </div>
     </div>
