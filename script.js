@@ -81,6 +81,7 @@ function onFrame(event) {
 		if (u) {
 			item.position.y -= item.bounds.height/16 ;
 			item.position.x -=item.bounds.height/64 ;
+			// regen at this position
 			if (item.position.y < -10){
 				item.position.y = view.size._height*1.2;
 				random = Math.random()*view.size._width;
@@ -89,15 +90,33 @@ function onFrame(event) {
 		} else if (d){
 			item.position.y += item.bounds.height/16 ;
 			item.position.x -=item.bounds.height/64 ;
+			// regen at this position
+			if (item.position.y > view.size._height*1.2){
+				item.position.y = -0;
+				random = Math.random()*view.size._width;
+				item.position.x = random;
+			}
 		} else if (l){
 			item.position.y -= item.bounds.height/64 ;
 			item.position.x -=item.bounds.height/16 ;
+			// regen at this position
+			if (item.position.x < 0){
+				item.position.x = view.size._width*1.1;
+				random = Math.random()*view.size._height;
+				item.position.y = random;
+			}
 		} else if (r){
 			item.position.y -= item.bounds.height/64 ;
 			item.position.x +=item.bounds.height/16 ;
 		} else {
 			item.position.y -= item.bounds.height/16 ;
 			item.position.x -=item.bounds.height/16 ;
+			if (item.position.y < -10){
+				random = Math.random()*10;
+				item.position.y = view.size._height /2;
+				random = Math.random()*2000;
+				item.position.x = view.size._width + random;
+			}
 		}
 		// item.position.y -= item.bounds.height/16 ;
 		// item.position.x -=item.bounds.height/16 ;
@@ -119,19 +138,7 @@ function onFrame(event) {
     // }
 
 
-		if (item.position.y < -10){
-			// item.position.y = 120;
-			// console.log("width : " + view.size._width)
-			// console.log("height : " + view.size._height)
-			// item.position.y = 1000;
 
-			random = Math.random()*10;
-			// item.position.y = view.size._height + random;
-			item.position.y = view.size._height /2;
-			// item.position.x = 1000;
-			random = Math.random()*2000;
-			item.position.x = view.size._width + random;
-		}
     // console.log(item.position.y)
 
     // if (item.bounds.right > view.size.width) {
