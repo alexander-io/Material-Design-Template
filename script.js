@@ -81,6 +81,11 @@ function onFrame(event) {
 		if (u) {
 			item.position.y -= item.bounds.height/16 ;
 			item.position.x -=item.bounds.height/64 ;
+			if (item.position.y < -10){
+				item.position.y = view.size._height*1.2;
+				random = Math.random()*view.size._width;
+				item.position.x = random;
+			}
 		} else if (d){
 			item.position.y += item.bounds.height/16 ;
 			item.position.x -=item.bounds.height/64 ;
