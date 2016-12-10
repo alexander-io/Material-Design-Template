@@ -108,6 +108,11 @@ function onFrame(event) {
 		} else if (r){
 			item.position.y -= item.bounds.height/64 ;
 			item.position.x +=item.bounds.height/16 ;
+			if (item.position.x > view.size._width){
+				item.position.x = -50;
+				random = Math.random()*view.size._height;
+				item.position.y = random;
+			}
 		} else {
 			item.position.y -= item.bounds.height/16 ;
 			item.position.x -=item.bounds.height/16 ;
