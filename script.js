@@ -1,5 +1,9 @@
+window.onload = function(){
+	var canvas = document.getElementById('mycanvas')
+	console.log(canvas)
+}
 // The amount of circles we want to make:
-var count = 50;
+var count = 100;
 var random;
 // Create a symbol, which we will use to place instances of later:
 var path = new Path.Circle({
@@ -18,6 +22,42 @@ var path = new Path.Circle({
 // 	console.log(Math.random());
 // }
 
+var u = false
+var d = false
+var l = false
+var r = false
+document.getElementById('drop1').addEventListener("click", function(){
+	console.log('up')
+
+
+	d = false
+	l = false
+	r = false
+	u = true
+})
+document.getElementById('drop2').addEventListener("click", function(){
+	console.log('down')
+
+	l = false
+	r = false
+	u = false
+	d = true
+})
+document.getElementById('drop3').addEventListener("click", function(){
+	console.log('left')
+
+	r = false
+	u = false
+	d = false
+	l = true
+})
+document.getElementById('drop4').addEventListener("click", function(){
+	console.log('right')
+	u = false
+	d = false
+	l = false
+	r = true
+})
 
 var symbol = new Symbol(path);
 
@@ -38,17 +78,24 @@ function onFrame(event) {
     // console.log(item.bounds.width)
 		// Move the item 1/20th of its width to the right. This way
 		// larger circles move faster than smaller circles:
-		// item.position.y -= item.bounds.height / 30;
-		// item.position.x -=item.bounds.height / 30;
-		// item.position.y -= item.bounds.height/2 ;
-		// item.position.x -=item.bounds.height/2 ;
-		// item.position.y -= item.bounds.height/3 ;
-		// item.position.x -=item.bounds.height/3 ;
-
-		// item.position.y -= item.bounds.height/8 ;
-		// item.position.x -=item.bounds.height/8 ;
-		item.position.y -= item.bounds.height/16 ;
-		item.position.x -=item.bounds.height/16 ;
+		if (u) {
+			item.position.y -= item.bounds.height/16 ;
+			item.position.x -=item.bounds.height/64 ;
+		} else if (d){
+			item.position.y += item.bounds.height/16 ;
+			item.position.x -=item.bounds.height/64 ;
+		} else if (l){
+			item.position.y -= item.bounds.height/64 ;
+			item.position.x -=item.bounds.height/16 ;
+		} else if (r){
+			item.position.y -= item.bounds.height/64 ;
+			item.position.x +=item.bounds.height/16 ;
+		} else {
+			item.position.y -= item.bounds.height/16 ;
+			item.position.x -=item.bounds.height/16 ;
+		}
+		// item.position.y -= item.bounds.height/16 ;
+		// item.position.x -=item.bounds.height/16 ;
 
 		// item.position.y -= item.bounds.height;
 		// item.position.x -=item.bounds.height;
